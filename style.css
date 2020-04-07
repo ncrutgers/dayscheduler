@@ -2,6 +2,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-image: url("assets/spring.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 textarea{
@@ -9,18 +12,18 @@ textarea{
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid #6c757d;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: rgb(231, 205, 231);
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
+/**/
 .description{
   white-space: pre-wrap;
 }
@@ -31,19 +34,22 @@ textarea{
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  /*white-space: pre-wrap;*/
+  height: auto;
+  padding: 20px;
+  justify-content: center;
+ 
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: #6c757d;
+  border-top: 1px solid ;
+  opacity: .9;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #d2e245;
   color: white;
 }
 
@@ -58,10 +64,11 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid #6c757d;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
+  opacity: .9;
   color: white;
 }
 
@@ -69,3 +76,11 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.col-12 {
+  max-width: 800px;
+  height: 800px;
+  padding-top: 20px;
+}
+
+
