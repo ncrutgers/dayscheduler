@@ -4,7 +4,8 @@ $("#currentDay").text(moment().format('dddd, MMMM Do'));
 //$("#currentDay").text(new Date().toDateString());
 
 // create a variable that stores current hour
-var currentHour = moment().format('h');
+var currentHour = new Date().getHours();
+
 
 // added classes for styling to all spans & buttons
 $("span").addClass("hour");
@@ -13,8 +14,10 @@ $("button").addClass("saveBtn");
 
 // when a timeblock is a specific time then change to a color: red(present), yellow(past), & green(future)
 $("span").each(function(){
-    if (parseInt(this.title) === currentHour){
+    
+    if (parseInt(this.title) == currentHour){
         $(this).parent().next().addClass("present");
+        
     } else if (parseInt(this.title) < currentHour){
         $(this).parent().next().addClass("past");
     } else if (parseInt(this.title) > currentHour){
