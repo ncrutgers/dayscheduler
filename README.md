@@ -11,3 +11,5 @@ A calendar application that allows the user to save events for each hour of the 
 * Timeblocks present a textarea where user can enter a new event
 * Clicking the save button for that timeblock, then text for that event is saved in local storage
 * Refreshing the page does not clear saved and/or entered text in textarea
+
+Deployed Site: https://ncrutgers.github.io/dayscheduler
